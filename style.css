@@ -1,0 +1,92 @@
+.a{
+    width: 200px;
+    height: 200px;
+    border:2px solid black;
+    margin:10px;
+    padding: 20px;
+}
+.b{
+    width: 200px;
+    height: 200px;
+    border:2px solid black;
+    margin:10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.c{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(118, 118, 206);
+    position: relative;
+    animation-name: myAni;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAni{
+    from {left: 0px;}
+  to {left: 200px;}
+}
+
+.grid-container{
+    display: grid;
+    background-color: black;
+    gap: 10px;
+    border: 2px solid black;
+    width: 60%;
+    }
+.grid-item {
+        background-color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+      }
+.item1{
+    grid-column: 1/ span 2;
+    grid-row: 1;
+}
+
+.item2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+
+.box{
+    text-align: center;
+    padding: 50px;
+    border: 10px solid blue;
+    margin:10px;
+    width:200px;
+    height: 200px;
+
+} 
+.aa{
+   width: 100px;
+   height: 100px;
+   text-align: center;
+   background-color: blue;
+}
+.bb{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: yellow;
+   visibility: hidden;
+ }
+ .cc{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: pink;
+    display: none;
+
+ }
+ .dd{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: orange;
+    
+ }
